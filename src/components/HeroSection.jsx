@@ -7,10 +7,10 @@ const HeroSection = () => {
       <nav className="navbar">
         <div className="logo">DITOY BAGUIO</div>
         <ul className="nav-links">
-          <li><a href="#destination">WHERE TO GO</a></li>
-          <li><a href="#blogs">EVENTS</a></li>
-          <li><a href="#booking">BLOG</a></li>
-          <li><a href="#contact">ABOUT </a></li>
+          <li><a href="#destination">DESTINATION</a></li>
+          <li><a href="#events">EVENTS</a></li>
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#activities">ACTIVITIES </a></li>
         </ul>
       </nav>
       <div className="hero-content">

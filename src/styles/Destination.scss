@@ -1,0 +1,129 @@
+.destination-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem;
+  
+    .text-content {
+      flex: 1;
+      padding: 1rem;
+      transform: translateY(20px); /* Slightly moved down */
+      transition: opacity 1s ease, transform 1s ease;
+  
+      &.fade-in {
+        opacity: 1; /* Fade in */
+        transform: translateY(0); /* Move to original position */
+      }
+  
+      .section-title {
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: #888;
+      }
+  
+      .main-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        margin: 0.5rem 0;
+      }
+  
+      .description {
+        margin: 1rem 0;
+        color: #555;
+        line-height: 1.5;
+      }
+  
+      .see-all-button {
+        padding: 0.5rem 1rem;
+        border: 1px solid #000;
+        background: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+  
+        &:hover {
+          background: #000;
+          color: #fff;
+        }
+      }
+    }
+  
+    .cards-container {
+      display: flex;
+      flex: 2;
+      gap: 1rem;
+  
+      .card {
+        position: relative;
+        flex: 1;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+  
+        &:hover {
+          transform: scale(1.05);
+        }
+  
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+          object-fit: cover;
+        }
+  
+        .card-overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgba(0, 0, 0, 0.5);
+          color: #fff;
+          padding: 1rem;
+          text-align: center;
+  
+          h3 {
+            margin: 0;
+          }
+  
+          .learn-more {
+            margin-top: 0.5rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid #fff;
+            background: none;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+  
+            &:hover {
+              background: #fff;
+              color: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .cards-swiper {
+    width: 100%;
+    padding: 20px 0;
+  
+    .card {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+  
+      img {
+        width: 100%;
+        height: auto;
+      }
+  
+      .card-overlay {
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+      }
+    }
+  }
+  
