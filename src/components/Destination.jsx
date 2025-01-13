@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "../styles/Destination.scss";
 import NatureImage from '../assets/Nature.jpg';
+import CultureImage from '../assets/Culture.jpg';
 
 const Destination = () => {
   return (
@@ -40,7 +41,7 @@ const Destination = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="card">
-            <img src="" alt="Culture" />
+            <img src={CultureImage} alt="Culture" />
             <div className="card-overlay">
               <h3>Culture</h3>
               <button className="learn-more">Learn More</button>
