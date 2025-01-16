@@ -3,6 +3,11 @@ import "../styles/Booking.scss";
 
 const BookingForm = () => {
   const [activeTab, setActiveTab] = useState("Apartments");
+  const [carType, setCarType] = useState("motorcycle");
+
+  const handleCarTypeChange = (e) => {
+    setCarType(e.target.value);
+  };
 
   const renderForm = () => {
     switch (activeTab) {
@@ -66,46 +71,48 @@ const BookingForm = () => {
             <button type="button">Find Hotels</button>
           </form>
         );
-      case "Car Rental":
-        return (
-          <form>
-            <div className="form-row">
-              <label>Pick-up location</label>
-              <input type="text" placeholder="Pick-up location" />
-            </div>
-            <div className="form-row">
-              <div className="half-width">
-                <label>Pick Up Date</label>
-                <input type="date" />
-              </div>
-              <div className="half-width">
-                <label>Drop Off Date</label>
-                <input type="date" />
-              </div>
-            </div>
-            <div className="form-row">
-              <div className="half-width">
-                <label>Type of Car</label>
-                <select>
-                    <option value="motorcycle">Motorcycle</option>
-                    <option value="sedan">Sedan</option>
-                    <option value="suv">SUV</option>
-                    <option value="van">Van</option>
-                </select>
-              </div>
-              <div className="half-width">
-              <label>Number of Seats</label>
-              <select>
-                <option value="2">2 Seats</option>
-                <option value="4">4 Seats</option>
-                <option value="6">6 Seats</option>
-                <option value="8">8 Seats</option>
-              </select>
-              </div>
-            </div>
-            <button type="button">Find Car Rental</button>
-          </form>
-        );
+        case "Car Rental":
+            return (
+              <form>
+                <div className="form-row">
+                  <label>Pick-up location</label>
+                  <input type="text" placeholder="Pick-up location" />
+                </div>
+                <div className="form-row">
+                  <div className="half-width">
+                    <label>Pick Up Date</label>
+                    <input type="date" />
+                  </div>
+                  <div className="half-width">
+                    <label>Drop Off Date</label>
+                    <input type="date" />
+                  </div>
+                </div>
+                <div className="form-row">
+                  <div className="half-width">
+                    <label>Type of Car</label>
+                    <select value={carType} onChange={handleCarTypeChange}>
+                      <option value="motorcycle">Motorcycle</option>
+                      <option value="sedan">Sedan</option>
+                      <option value="suv">SUV</option>
+                      <option value="van">Van</option>
+                    </select>
+                  </div>
+                  {carType !== "motorcycle" && (
+                    <div className="half-width">
+                      <label>Number of Seats</label>
+                      <select>
+                        <option value="2">2 Seats</option>
+                        <option value="4">4 Seats</option>
+                        <option value="6">6 Seats</option>
+                        <option value="8">8 Seats</option>
+                      </select>
+                    </div>
+                  )}
+                </div>
+                <button type="button">Find Car Rental</button>
+              </form>
+            );          
       default:
         return null;
     }
