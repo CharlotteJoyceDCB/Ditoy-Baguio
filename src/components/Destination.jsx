@@ -5,76 +5,79 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "../styles/Destination.scss";
 import NatureImage from '../assets/Nature.jpg';
+import ActivitiesImage from '../assets/Activities.jpg';
 import CultureImage from '../assets/Culture.jpg';
+import FoodImage from '../assets/Food.png';
+import EventsImage from '../assets/Events & Festivities.jpg';
+import ReligiousImage from '../assets/Religious & Spiritual.jpg';
 
 const Destination = () => {
-  return (
-    <div className="destination-section">
-      {/* Fading Text Section */}
-      <div className="text-content">
-        <h2 className="section-title">Where to Go</h2>
-        <h1 className="main-title">Pick your own journey.</h1>
-        <p className="description">
-          From the cool breeze and scenic mountain views 
-          to the vibrant culture and bustling markets, 
-          Baguio is a haven for adventurers, food lovers, and those seeking peace amidst nature. <br/><br/>
-          Ditoy Baguio: Here, your adventure begins.
-          Plan your trip today and experience the magic of Baguio!
-        </p>
-      </div>
+  const destinations = [
+    {
+      title: "Nature",
+      image: NatureImage,
+      link: "#",
+    },
+    {
+      title: "Activities",
+      image: ActivitiesImage,
+      link: "#",
+    },
+    {
+      title: "Culture",
+      image: CultureImage,
+      link: "#",
+    },
+    {
+      title: "Food",
+      image: FoodImage,
+      link: "#",
+    },
+    {
+      title: "Events & Festivities",
+      image: EventsImage,
+      link: "#",
+    },
+    {
+      title: "Religious & Spiritual",
+      image: ReligiousImage,
+      link: "#",
+    },
+  ];
 
-      {/* Sliding Cards Section */}
+  return (
+    <div className="destination">
+      <h2 className="heading">Where to go?</h2>
+      <p className="description">
+        From the cool breeze and scenic mountain views to the vibrant culture
+        and bustling markets, Baguio is a haven for adventurers, food lovers,
+        and those seeking peace amidst nature. Ditoy Baguio: Here, your
+        adventure begins. Plan your trip today and experience the magic of
+        Baguio!
+      </p>
       <Swiper
-        slidesPerView={2.2} // Show 2 full cards and part of the third
-        spaceBetween={20} // Space between cards
-        modules={[ Navigation]} // Use Swiper modules
-        className="cards-swiper"
+        modules={[Navigation, Pagination]}
+        navigation
+        pagination={{ clickable: true }}
+        spaceBetween={20}
+        slidesPerView={3}
+        breakpoints={{
+          768: { slidesPerView: 1 },
+          1024: { slidesPerView: 3 },
+        }}
+        className="swiper-container"
       >
-        <SwiperSlide>
-          <div className="card">
-            <img src={NatureImage} alt="Nature" />
-            <div className="card-overlay">
-              <h3>Nature</h3>
-              <button className="learn-more">Learn More</button>
+        {destinations.map((item, index) => (
+          <SwiperSlide key={index} className="card">
+            <img src={item.image} alt={item.title} className="image" />
+            <div className="info">
+              <h3 className="title">{item.title}</h3>
+              <a href={item.link} className="link">
+                Explore →
+              </a>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <img src={CultureImage} alt="Culture" />
-            <div className="card-overlay">
-              <h3>Culture</h3>
-              <button className="learn-more">Learn More</button>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <img src="nature.jpg" alt="Food" />
-            <div className="card-overlay">
-              <h3>Food</h3>
-              <button className="learn-more">Learn More</button>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <img src="nature.jpg" alt="Adventure & Activities" />
-            <div className="card-overlay">
-              <h3>Adventure & Activities</h3>
-              <button className="learn-more">Learn More</button>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="card">
-            <img src="nature.jpg" alt="Religious & Spiritual" />
-            <div className="card-overlay">
-              <h3>Religious & Spiritual</h3>
-              <button className="learn-more">Learn More</button>
-            </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
