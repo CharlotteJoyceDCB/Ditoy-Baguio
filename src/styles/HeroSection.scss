@@ -8,21 +8,24 @@ body, html {
 }
 .hero-section {
     height: 100vh;
-    background: url('../assets/lions-head-w-overlay.png') no-repeat center center/cover;
+    background: url('../assets/lions-head-4.png') no-repeat center center/cover;
     position: relative;
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-  
+    // background-color: rgba(0, 0, 0, 0.5);
+    // padding-bottom: 50px;
+
     .navbar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 40px;
-      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px 40px;
+      // background-color: rgba(0, 0, 0, 0.5);
+      background-color: #FFFFFF;
   
       .logo {
         font-size: 1.5rem;
         font-weight: bold;
+        color: #1FC9BE;
       }
   
       .nav-links {
@@ -34,12 +37,12 @@ body, html {
   
           a {
             text-decoration: none;
-            color: white;
+            color: #000;
             font-size: 1rem;
             transition: color 0.3s;
   
             &:hover {
-              color: #ffcc00;
+              color: #1FC9BE;
             }
           }
         }
@@ -48,7 +51,7 @@ body, html {
   
 .hero-content {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -62,7 +65,7 @@ body, html {
     }
 
     .hero-button {
-      background-color: #007bff;
+      background-color: #1FC9BE;
       color: white;
       padding: 10px 20px;
       border: none;
@@ -75,7 +78,7 @@ body, html {
       transition: background-color 0.3s, transform 0.3s;
 
       &:hover {
-        background-color: #0056b3;
+        background-color: #04A99B ;
         transform: scale(1.05);
       }
 
