@@ -128,7 +128,7 @@ const BookingForm = () => {
   };
 
   return (
-    <div className="booking-container">
+    <div className="booking-container" id="booking">
       <div className="booking-layout">
         <div className="booking-column">
           <div className="tabs">

@@ -46,7 +46,7 @@ const Destination = () => {
   ];
 
   return (
-    <div className="destination">
+    <div className="destination" id="destination">
       <h2 className="heading">Where to go?</h2>
       <p className="description">
         From the cool breeze and scenic mountain views to the vibrant culture
