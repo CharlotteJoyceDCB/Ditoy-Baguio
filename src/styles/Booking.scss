@@ -80,7 +80,7 @@
                 background-color: #fff;
                 color: #000;
                 box-sizing: border-box;
-              }              
+              }      
   
             label {
               display: block;
@@ -97,6 +97,11 @@
               background-color: #fff;
               color: #000;
               box-sizing: border-box;
+
+              &:focus {
+                outline: none;
+                box-shadow: none;
+              }
             }
   
             .full-width {

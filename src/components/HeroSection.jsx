@@ -4,7 +4,7 @@ import "../styles/HeroSection.scss";
 const HeroSection = () => {
   return (
     <div className="hero-section">
-      <nav className="navbar">
+      {/* <nav className="navbar">
         <a href="#home" className="logo">DITOY BAGUIO</a>
         <ul className="nav-links">
           <li><a href="#destination">DESTINATION</a></li>
@@ -12,7 +12,7 @@ const HeroSection = () => {
           <li><a href="#blog">BLOG</a></li>
           <li><a href="#booking">BOOKING </a></li>
         </ul>
-      </nav>
+      </nav> */}
       <div className="hero-content" id="home">
         <p className="hero-text">
         Discover the beauty and culture of the Summer Capital of the Philippines.
