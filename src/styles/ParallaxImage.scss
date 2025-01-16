@@ -1,0 +1,32 @@
+.parallax {
+    position: relative;
+    background-image: url('../assets/Parallax.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .parallax-content {
+    text-align: center;
+    max-width: 80%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+  }
+  
+  .parallax h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .parallax p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
