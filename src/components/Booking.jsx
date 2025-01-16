@@ -98,17 +98,19 @@ const BookingForm = () => {
                       <option value="van">Van</option>
                     </select>
                   </div>
-                  {carType !== "motorcycle" && (
-                    <div className="half-width">
-                      <label>Number of Seats</label>
-                      <select>
-                        <option value="2">2 Seats</option>
-                        <option value="4">4 Seats</option>
-                        <option value="6">6 Seats</option>
-                        <option value="8">8 Seats</option>
-                      </select>
-                    </div>
-                  )}
+                  <div className="half-width">
+                  {carType === "motorcycle" ? (
+                    <>
+                        <label>Quantity</label>
+                        <input type="number" min="1" max="100" step="1" />
+                    </>
+                ) : (
+                    <>
+                        <label>Number of Passenger</label>
+                        <input type="number" min="1" max="12" step="1" placeholder="max of 10"/>
+                    </>
+                )}
+                  </div>
                 </div>
                 <button type="button">Find Car Rental</button>
               </form>
