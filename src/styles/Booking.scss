@@ -122,22 +122,31 @@
   
       .info-column {
         flex: 1;
-        background-color: #f9f9f9;
+        // background-color: red;
         padding: 20px;
         border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   
         .info-content {
-          text-align: center;
+          text-align: left;
   
           h2 {
-            font-size: 24px;
+            font-size: 36px;
             margin-bottom: 20px;
+            color: #000;
           }
-  
+
+          h3 {
+            font-size: 24px;
+            color: #000;
+          }
           p {
             font-size: 16px;
             color: #555;
+          }
+          a {
+            text-decoration: none;
+            color: #1FC9BE;
           }
         }
       }

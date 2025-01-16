@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/Booking.scss";
+// import Panagbenga from '../assets/Panagbenga2024-OG-Image.png';
 
 const BookingForm = () => {
   const [activeTab, setActiveTab] = useState("Apartments");
@@ -154,10 +155,16 @@ const BookingForm = () => {
         </div>
         <div className="info-column">
           <div className="info-content">
-            <h2>Information</h2>
+            {/* <img src={Panagbenga} alt="" />
+             */}
+             <h2>Book Your Ideal Stay or Ride</h2>
             <p>
-              Empty
+              Our booking system lets you reserve apartments, hotels, or even rent a car with ease. Choose the category you’re interested in,
+              enter your preferences, and we’ll help you find the perfect option for your needs.
             </p>
+            <h3>Exclusive Offers for You</h3>
+            <p>Take advantage of limited-time discounts and special offers when you book with us today. 
+                <a href="#!"> Sign up</a> for exclusive deals and be the first to know about our newest offers.</p>
           </div>
         </div>
       </div>
