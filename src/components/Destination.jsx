@@ -47,7 +47,7 @@ const Destination = () => {
 
   return (
     <div className="destination" id="destination">
-      <h2 className="heading">Where to go?</h2>
+      <h2 className="heading">Things to do</h2>
       <p className="description">
         From the cool breeze and scenic mountain views to the vibrant culture
         and bustling markets, Baguio is a haven for adventurers, food lovers,
@@ -62,8 +62,10 @@ const Destination = () => {
         spaceBetween={20}
         slidesPerView={3}
         breakpoints={{
-          768: { slidesPerView: 1 },
-          1024: { slidesPerView: 3 },
+          375: { slidesPerView: 1},
+          600: { slidesPerView: 2 },
+          768: { slidesPerView: 2 },
+          1024: { slidesPerView: 4 },
         }}
         className="swiper-container"
       >
