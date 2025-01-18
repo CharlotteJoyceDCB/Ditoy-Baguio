@@ -9,7 +9,9 @@ html {
     border-radius: 8px;
     max-width: 1200px;
     margin: 0 auto;
-    height: 100vh;
+    height: max-content;
+    // padding-top: 5rem;
+    // padding-bottom: 4rem;
     display: flex;
     align-items: center;
   

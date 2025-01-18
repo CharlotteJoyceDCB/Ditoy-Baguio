@@ -8,6 +8,7 @@ import PanagbengaFest from '../assets/Panagbenga-Float-Parade.png';
 import Panagbengascapes from '../assets/Panagbengascapes.png';
 import BaguioBlooms from '../assets/Baguio-Blooms.jpg';
 import PMA from '../assets/PMA.png';
+
 const events = [
   {
     id: 1,
@@ -72,7 +73,7 @@ const App = () => {
     <div className="events-section" id="events">
       <div className="header">
         <h1>Events</h1>
-        <a href="#">Show all &rarr;</a>
+        <a href="#!">Show all &rarr;</a>
       </div>
       <div className="events-grid">
         {events.map((event) => (
