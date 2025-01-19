@@ -46,7 +46,7 @@ const BookingForm = () => {
         return (
           <form>
             <div className="form-row location-row">
-              <label>Enter location</label>
+              <label>Desired location</label>
               <input type="text" className="location" placeholder="Enter location" />
             </div>
             <div className="form-row">

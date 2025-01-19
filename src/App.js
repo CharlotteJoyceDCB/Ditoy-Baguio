@@ -5,6 +5,8 @@ import Booking from "./components/Booking";
 import Parallax from "./components/ParallaxImage";
 import Events from "./components/Events";
 import DitoyBaguio from "./components/DitoyBaguio";
+import Blog from "./components/Blog";
+
 // import Parallax from './components/ParallaxImage';
 
 function App() {
@@ -14,7 +16,9 @@ function App() {
       <HeroSection />
       <Destination />
       <Parallax />
+      <Blog />
       <Events />
+      
       <Booking />
       <DitoyBaguio />
     </div>
