@@ -16,8 +16,8 @@ const BookingForm = () => {
         return (
           <form>
             <div className="form-row location-row">
-              <label>Enter location</label>
-              <input type="text" placeholder="Enter location" />
+              <label>Desired location</label>
+              <input type="text" placeholder="Enter address" />
             </div>
             <div className="form-row">
               <div className="half-width">
@@ -47,7 +47,7 @@ const BookingForm = () => {
           <form>
             <div className="form-row location-row">
               <label>Desired location</label>
-              <input type="text" className="location" placeholder="Enter location" />
+              <input type="text" className="location" placeholder="Enter address" />
             </div>
             <div className="form-row">
               <div className="half-width">
