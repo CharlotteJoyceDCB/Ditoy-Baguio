@@ -49,7 +49,9 @@ const Blog = () => {
 
   return (
     <div className="blog-container" id="blog">
-      <h1>Blog</h1>
+      <div className="header">
+        {/* <h1>Blog</h1> */}
+      </div>
       <div className="posts-grid">
         {posts.map((post, index) => (
           <div key={index} className="post-card">
