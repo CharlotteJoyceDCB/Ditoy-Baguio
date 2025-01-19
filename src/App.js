@@ -6,6 +6,7 @@ import Parallax from "./components/ParallaxImage";
 import Events from "./components/Events";
 import DitoyBaguio from "./components/DitoyBaguio";
 import Blog from "./components/Blog";
+import Footer from "./components/Footer";
 
 // import Parallax from './components/ParallaxImage';
 
@@ -18,9 +19,9 @@ function App() {
       <Parallax />
       <Blog />
       <Events />
-      
       <Booking />
       <DitoyBaguio />
+      <Footer />
     </div>
   );
 }
