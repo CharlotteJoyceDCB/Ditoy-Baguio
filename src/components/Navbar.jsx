@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import feather from 'feather-icons';
 import '../styles/Navbar.scss';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -14,9 +16,16 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  useEffect(() => {
+    feather.replace();
+  }, []);
+
   return (
     <nav className="navbar">
-      <a href="#home" className="logo">DITOY BAGUIO</a>
+      <div className="logo">
+        <img src={logo} className='logo' />
+        <a href="#home" className="logo-title">DITOY BAGUIO</a>
+      </div>
       <button
         className="menu-toggle"
         onClick={toggleMenu}
@@ -31,6 +40,17 @@ const Navbar = () => {
         <li><a href="#events" className={activeLink === 'events' ? 'active' : ''} onClick={() => handleLinkClick('events')}>EVENTS</a></li>
         <li><a href="#booking" className={activeLink === 'booking' ? 'active' : ''} onClick={() => handleLinkClick('booking')}>BOOKING</a></li>
       </ul>
+      <div className="social-icons">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i data-feather="facebook"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i data-feather="instagram"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <i data-feather="twitter"></i>
+        </a>
+      </div>
     </nav>
   );
 };
