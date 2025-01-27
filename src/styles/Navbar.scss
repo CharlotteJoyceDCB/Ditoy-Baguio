@@ -101,7 +101,11 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 770px) {
+    .social-icons {
+      display: none;
+      visibility: hidden;
+    }
     .menu-toggle {
       display: block;
     }
