@@ -1,17 +1,17 @@
 import React, { useEffect } from "react";
 import "../styles/DitoyBaguio.scss";
-import Post1 from '../assets/DitoyBaguioPost-1.jpg';
-import Post2 from '../assets/DitoyBaguioPost-2.jpg';
-import Post3 from '../assets/DitoyBaguioPost-3.jpg';
-import Post4 from '../assets/DitoyBaguioPost-4.jpg';
-import Post5 from '../assets/DitoyBaguioPost-5.jpg';
-import Post6 from '../assets/DitoyBaguioPost-6.jpg';
-import Post7 from '../assets/DitoyBaguioPost-7.jpg';
-import Post8 from '../assets/DitoyBaguioPost-8.jpg';
-import Post9 from '../assets/DitoyBaguioPost-9.webp';
-import Post10 from '../assets/DitoyBaguioPost-10.jpg';
-import Post11 from '../assets/DitoyBaguioPost-11.jpg';
-import Post12 from '../assets/DitoyBaguioPost-12.jpg';
+import Post1 from '../assets/SocialMedia/DitoyBaguioPost-1.jpg';
+import Post2 from '../assets/SocialMedia/DitoyBaguioPost-2.jpg';
+import Post3 from '../assets/SocialMedia/DitoyBaguioPost-3.jpg';
+import Post4 from '../assets/SocialMedia/DitoyBaguioPost-4.jpg';
+import Post5 from '../assets/SocialMedia/DitoyBaguioPost-5.jpg';
+import Post6 from '../assets/SocialMedia/DitoyBaguioPost-6.jpg';
+import Post7 from '../assets/SocialMedia/DitoyBaguioPost-7.jpg';
+import Post8 from '../assets/SocialMedia/DitoyBaguioPost-8.jpg';
+import Post9 from '../assets/SocialMedia/DitoyBaguioPost-9.webp';
+import Post10 from '../assets/SocialMedia/DitoyBaguioPost-10.jpg';
+import Post11 from '../assets/SocialMedia/DitoyBaguioPost-11.jpg';
+import Post12 from '../assets/SocialMedia/DitoyBaguioPost-12.jpg';
 import feather from 'feather-icons';
 
 const images = [

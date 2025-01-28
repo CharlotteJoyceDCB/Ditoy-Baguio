@@ -1,13 +1,13 @@
 import React from "react";
 import "../styles/Events.scss";
-import FurrACause from '../assets/Gig-Furr-A-Cause.jpg';
-import IECEP from '../assets/Tech-Con-Ai.png';
-import Rambakan from '../assets/Rambakan.jpg';
-import HighlandWeddings from '../assets/Highland-Weddings.jpg';
-import PanagbengaFest from '../assets/Panagbenga-Float-Parade.png';
-import Panagbengascapes from '../assets/Panagbengascapes.png';
-import BaguioBlooms from '../assets/Baguio-Blooms.jpg';
-import PMA from '../assets/PMA.png';
+import FurrACause from '../assets/Events/Gig-Furr-A-Cause.jpg';
+import IECEP from '../assets/Events/Tech-Con-Ai.png';
+import Rambakan from '../assets/Events/Rambakan.jpg';
+import HighlandWeddings from '../assets/Events/Highland-Weddings.jpg';
+import PanagbengaFest from '../assets/Events/Panagbenga-Float-Parade.png';
+import Panagbengascapes from '../assets/Events/Panagbengascapes.png';
+import BaguioBlooms from '../assets/Events/Baguio-Blooms.jpg';
+import PMA from '../assets/Events/PMA.png';
 
 const events = [
   {

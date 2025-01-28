@@ -1,22 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "../styles/Destination.scss";
-import NatureImage from '../assets/Nature.jpg';
-import ActivitiesImage from '../assets/Activities.jpg';
-import CultureImage from '../assets/Culture.jpg';
-import FoodImage from '../assets/Food.png';
-import EventsImage from '../assets/Events & Festivities.jpg';
-import ReligiousImage from '../assets/Religious & Spiritual.jpg';
+import NatureImage from '../assets/WhereToGo/Nature.jpg';
+import ActivitiesImage from '../assets/WhereToGo/Activities.jpg';
+import CultureImage from '../assets/WhereToGo/Culture.jpg';
+import FoodImage from '../assets/WhereToGo/Food.png';
+import EventsImage from '../assets/WhereToGo/Events & Festivities.jpg';
+import ReligiousImage from '../assets/WhereToGo/Religious & Spiritual.jpg';
 
 const Destination = () => {
   const destinations = [
     {
       title: "Nature",
       image: NatureImage,
-      link: "#",
+      link: "/nature",
     },
     {
       title: "Activities",

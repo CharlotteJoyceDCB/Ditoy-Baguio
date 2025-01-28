@@ -1,11 +1,11 @@
 import React from "react";
 import "../styles/Blog.scss";
-import BurnhamPark from '../assets/Burnham-Park.jpg';
-import CampJohnHay from '../assets/CampJohnHay.jpg';
-import StrawberryFarm from '../assets/Strawberry-Farm.jpg';
-import PanagbengaFestival from '../assets/Panagbenga.jpg';
-import BaguioFood from '../assets/Baguio-Food.jpg';
-import MinesViewPark from '../assets/MinesViewPark.png';
+import BurnhamPark from '../assets/Blog/Burnham-Park.jpg';
+import CampJohnHay from '../assets/Blog/CampJohnHay.jpg';
+import StrawberryFarm from '../assets/Blog/Strawberry-Farm.jpg';
+import PanagbengaFestival from '../assets/Blog/Panagbenga.jpg';
+import BaguioFood from '../assets/Blog/Baguio-Food.jpg';
+import MinesViewPark from '../assets/Blog/MinesViewPark.png';
 
 const Blog = () => {
   const posts = [
