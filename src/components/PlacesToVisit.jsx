@@ -1,6 +1,7 @@
-import React from "react";
+import React,  { useEffect } from "react";
 import "../styles/PlacesToVisit.scss";
-import BannerImage from "../assets/Nature/banner-image.png";
+import feather from 'feather-icons';
+// import BannerImage from "../assets/Nature/banner-image.png";
 import BurnhamPark from "../assets/Nature/burnham-park.jpg";
 import MinesViewPark from "../assets/Nature/minesview-park.png";
 import CampJohnHay from "../assets/Nature/camp-john-hay.jpg";
@@ -55,23 +56,24 @@ const places = [
 ];
 
 const PlacesToVisit = () => {
+    useEffect(() => {
+        feather.replace();
+      }, []);
+
   return (
     <div className="places-container">
       {/* Banner Image */}
-      <div className="banner">
-        <img
-          src={BannerImage}
-          alt="Baguio Nature Attractions"
-          className="banner-image"
-        />
+      <div class="banner">
+        <div class="banner-image"></div>
       </div>
 
       {/* Navigation Buttons */}
       <div className="navigation">
-        <button className="nav-button active">Where to go?</button>
         <button className="nav-button" onClick={() => (window.location.href = "/home")}>
           Home
         </button>
+        <i  className="arrow" data-feather="arrow-right-circle"></i>
+        <button className="nav-button active">Where to go?</button>
       </div>
 
       {/* Page Title */}

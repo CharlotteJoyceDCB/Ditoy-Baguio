@@ -11,8 +11,6 @@ import DitoyBaguio from "./components/DitoyBaguio";
 import Blog from "./components/Blog";
 import Footer from "./components/Footer";
 
-// import Parallax from './components/ParallaxImage';
-
 function App() {
   return (
     <Router>
