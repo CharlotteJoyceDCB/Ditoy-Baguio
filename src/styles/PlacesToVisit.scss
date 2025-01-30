@@ -1,119 +1,155 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .places-container {
-    padding: 0; 
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
-  
-    .banner {
-      position: relative;
-      height: 300px;
-      overflow: hidden;
-      
-  
-      .banner-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('../assets/Nature/banner-image.png');
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        transform: translateZ(0);
-      }
-    }  
-  
-    .navigation {
-      display: flex;
-      justify-content: start;
-      gap: 10px;
-      margin: 20px;
-      align-items: center;
-  
-        .arrow {
-        color: #5d5d5d;
-        }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-      .nav-button {
-        background-color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 4px;
-        font-size: 1rem;
-        cursor: pointer;
-        color: #5d5d5d;
-  
-        &.active {
-          color: #04A99B;
-        }
-  
-        &:hover {
-          color: #1FC9BE;
-        }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.places-container {
+  padding: 0;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+
+  .banner {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+
+    .banner-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('../assets/Nature/banner-image.png');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transform: translateZ(0);
+    }
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    margin: 20px;
+    align-items: center;
+
+    .arrow {
+      color: #5d5d5d;
+    }
+
+    .nav-button {
+      background-color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      color: #5d5d5d;
+
+      &.active {
+        color: #04A99B;
+      }
+
+      &:hover {
+        color: #1FC9BE;
       }
     }
-  
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #333;
-    }
-  
-    .place-card {
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .place-card {
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .place-image {
+      width: 500px;
+      height: 300px;
+      object-fit: cover;
       border-radius: 8px;
-      margin: 20px 0;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      gap: 20px;
-  
-      .place-image {
-        width: 500px;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 8px;
-        flex-shrink: 0;
+      flex-shrink: 0;
+    }
+
+    .place-details {
+      h2 {
+        color: #2c3e50;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
       }
-  
+
+      p {
+        color: #555;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .image-left {
+    flex-direction: row;
+  }
+
+  .image-right {
+    flex-direction: row-reverse;
+
+    .place-image {
+      margin-left: 20px;
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 770px) {
+    .place-card {
+      flex-direction: column;
+      text-align: center;
+
+      .place-image {
+        width: 100%;
+        height: auto;
+      }
+
       .place-details {
         h2 {
-          color: #2c3e50;
-          font-size: 1.5rem;
-          margin-bottom: 10px;
+          font-size: 1.2rem;
         }
-  
+
         p {
-          color: #555;
-          line-height: 1.6;
+          font-size: 0.9rem;
         }
-      }
-    }
-  
-    .image-left {
-      flex-direction: row;
-    }
-  
-    .image-right {
-      flex-direction: row-reverse;
-  
-      .place-image {
-        margin-left: 20px;
-        margin-right: 0;
       }
     }
   }
-  
+
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.2rem;
+    }
+
+    .place-details {
+      h2 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
