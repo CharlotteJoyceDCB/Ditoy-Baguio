@@ -23,8 +23,8 @@ Welcome to the Baguio travel guide! This website provides visitors with all the 
 
 ## Contributing
 We welcome contributions from the community! If you'd like to improve this website, feel free to fork the repository and submit a pull request. You can help by:  
-Reporting issues or bugs.  
-Suggesting new features.
+- Reporting issues or bugs.  
+- Suggesting new features.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
