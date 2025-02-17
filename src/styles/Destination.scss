@@ -88,8 +88,9 @@
           transition: background 0.3s ease, color 0.3s ease;
 
           &:hover {
-            background: white;
-            color: black;
+            background: #1fc9be;;
+            color: white;
+            border: #1fc9be;
           }
         }
       }

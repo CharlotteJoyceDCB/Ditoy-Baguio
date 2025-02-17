@@ -36,6 +36,7 @@ const Footer = () => {
       </div>
       <div className="footer__copyright">
         <p>&copy; {new Date().getFullYear()} Your Travel Website. All rights reserved.</p>
+        <p>Made by Charlotte Joyce B.</p>
       </div>
     </footer>
   );
