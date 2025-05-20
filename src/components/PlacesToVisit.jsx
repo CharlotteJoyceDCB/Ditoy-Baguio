@@ -1,4 +1,5 @@
 import React,  { useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 import "../styles/PlacesToVisit.scss";
 import feather from 'feather-icons';
 // import BannerImage from "../assets/Nature/banner-image.png";
@@ -60,6 +61,9 @@ const PlacesToVisit = () => {
         feather.replace();
       }, []);
 
+    const navigate = useNavigate();
+
+
   return (
     <div className="places-container">
       {/* Banner Image */}
@@ -69,10 +73,10 @@ const PlacesToVisit = () => {
 
       {/* Navigation Buttons */}
       <div className="navigation">
-        <button className="nav-button" onClick={() => (window.location.href = "/home")}>
+        <button className="nav-button" onClick={() => navigate("/")}>
           Home
         </button>
-        <i  className="arrow" data-feather="arrow-right-circle"></i>
+        <i className="arrow" data-feather="arrow-right-circle"></i>
         <button className="nav-button active">Where to go?</button>
       </div>
 
