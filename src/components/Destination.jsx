@@ -22,7 +22,7 @@ const Destination = () => {
     {
       title: "Activities",
       image: ActivitiesImage,
-      link: "#",
+      link: "/activities",
     },
     {
       title: "Culture",

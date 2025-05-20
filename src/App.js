@@ -3,7 +3,14 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import Destination from "./components/Destination";
-import PlacesToVisit from "./components/PlacesToVisit";
+// Explore Cards
+import Nature from "./components/Nature";
+import Activities from "./components/Activities";
+// import Culture from "./components/Culture";
+// import Food from "./components/Food";
+// import Festivities from "./components/Festivities";
+// import Religious from "./components/Religious";
+// End of Explore Cards
 import Booking from "./components/Booking";
 import Parallax from "./components/ParallaxImage";
 import Events from "./components/Events";
@@ -46,7 +53,8 @@ function App() {
           />
 
           {/* Nature Page (Navbar Hidden) */}
-          <Route path="/nature" element={<PlacesToVisit />} />
+          <Route path="/nature" element={<Nature />} />
+          <Route path="/activities" element={<Activities />} />
 
           {/* Other Routes */}
           <Route path="/booking" element={<Booking />} />
