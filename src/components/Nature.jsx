@@ -116,7 +116,7 @@ const Nature = () => {
     <div className="places-container">
       {/* Banner Image */}
       <div class="banner">
-        <div class="banner-image"></div>
+        <div class="banner-image-nature"></div>
       </div>
 
       {/* Navigation Buttons */}
