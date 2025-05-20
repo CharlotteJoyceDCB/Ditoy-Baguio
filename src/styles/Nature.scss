@@ -9,6 +9,8 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
+  height: auto;
+  overflow-x: hidden;
 }
 
 .places-container {
@@ -16,6 +18,8 @@ html, body {
   background-color: #f9f9f9;
   font-family: Arial, sans-serif;
   padding-bottom: 30px;
+  overflow: visible; 
+  height: auto;
 
   .banner {
     position: relative;

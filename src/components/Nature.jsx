@@ -1,4 +1,6 @@
 import React,  { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { useNavigate } from 'react-router-dom';
 import "../styles/Nature.scss";
 import feather from 'feather-icons';
@@ -83,6 +85,11 @@ const Nature = () => {
       }, []);
 
     const navigate = useNavigate();
+      AOS.init({
+        duration: 800,
+        once: true
+      });
+    feather.replace();
 
 
   return (
@@ -109,6 +116,7 @@ const Nature = () => {
         <div
           className={`place-card ${index % 2 === 0 ? "image-left" : "image-right"}`}
           key={index}
+          data-aos="fade-up"
         >
           <img src={place.image} alt={place.title} className="place-image" />
           <div className="place-details">
