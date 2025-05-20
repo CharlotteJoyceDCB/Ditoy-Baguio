@@ -15,6 +15,7 @@ html, body {
   padding: 0;
   background-color: #f9f9f9;
   font-family: Arial, sans-serif;
+  padding-bottom: 30px;
 
   .banner {
     position: relative;
@@ -74,7 +75,7 @@ html, body {
 
   .place-card {
     border-radius: 8px;
-    margin: 20px 70px;
+    margin: 0px 70px;
     padding: 20px;
     display: flex;
     align-items: center;

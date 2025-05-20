@@ -15,7 +15,7 @@ const places = [
   {
     title: "Burnham Park",
     description:
-      "Here’s the first on our list: Burnham Park. This sprawling green space lies at the very heart of Baguio, making it a beloved destination for both locals and tourists. It offers a peaceful retreat where you can bask in nature’s beauty while enjoying a variety of activities. The man-made lake is perfect for boating, and the park’s vibrant flower gardens create a picturesque setting for leisurely strolls. Families often gather here for picnics, taking advantage of the ample shady trees and the serene atmosphere.",
+      "This sprawling green space lies at the very heart of Baguio, making it a beloved destination for both locals and tourists. It offers a peaceful retreat where you can bask in nature’s beauty while enjoying a variety of activities. The man-made lake is perfect for boating, and the park’s vibrant flower gardens create a picturesque setting for leisurely strolls. Families often gather here for picnics, taking advantage of the ample shady trees and the serene atmosphere.",
     image: BurnhamPark,
     hours: "Open daily, 6:00 AM – 8:00 PM",
     fees: "Free entry | Parking fees apply",
@@ -24,7 +24,7 @@ const places = [
   {
     title: "Mines View Park",
     description:
-      "Mines View Park is a must-visit for its breathtaking panoramic views of the surrounding mountains and lush valleys. The park’s elevated location makes it an excellent spot to catch the sunrise or sunset, providing a magical start or end to your day. Visitors often find themselves captivated by the scenery, which also serves as a stunning backdrop for photos. The area is dotted with souvenir shops where you can purchase locally crafted goods, adding a touch of Baguio to your trip.",
+      "Mines View Park is a must-visit for its breathtaking panoramic views of the surrounding mountains and lush valleys. The park’s elevated location makes it an excellent spot to catch the sunrise or sunset, providing a magical start or end to your day. Visitors often find themselves captivated by the scenery, which also serves as a stunning backdrop for photos. The area is dotted with souvenir shops where you can purchase locally crafted goods.",
     image: MinesViewPark,
     hours: "Open daily, 6:00 AM – 8:00 PM",
     fees: "Free entry | Parking fees apply",
