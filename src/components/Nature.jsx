@@ -75,7 +75,7 @@ const places = [
     description:
       "Maryknoll Ecological Sanctuary is a peaceful haven tucked away in the outskirts of the city, ideal for travelers seeking quiet reflection and a deeper connection with nature. This tranquil spot offers lush gardens, forest trails, and a “cosmic journey” trail that takes visitors through interactive stations highlighting the story of creation and humanity's role in caring for the Earth. It’s not just a nature walk—it’s an experience that blends ecology, spirituality, and education.",
     image: Maryknoll,
-    hours: "Open Friday - Sunday, 7:30 AM – 4:30 PM",
+    hours: "Open daily, 8:30 AM – 4:30 PM",
     fees: "Entrance Fee: P35 - P50 | Pay Parking",
     mapsLink: "https://www.google.com/maps?q=Maryknoll+Ecological+Sanctuary"
   },
@@ -84,7 +84,7 @@ const places = [
     description:
       "Tucked away in a quiet part of Baguio, the Bamboo Sanctuary offers a peaceful retreat for those looking to reconnect with nature. Walking through the towering bamboo groves, you’ll feel like you’ve stepped into a zen-inspired forest. The light filtering through the green stalks creates a calming, almost meditative atmosphere—perfect for relaxing strolls or introspective moments. This hidden gem is also a favorite spot for casual photoshoots thanks to its unique aesthetic and tranquil ambiance. It’s an ideal escape from the hustle of downtown Baguio.",
     image: Bamboo,
-    hours: "Open daily, 9:00 AM – 5:00 PM",
+    hours: "Open Friday - Sunday, 7:30 AM – 4:30 PM",
     fees: "Entrance Fee: Any amount will do (For Donations) | Pay Parking",
     mapsLink: "https://www.google.com/maps?q=Baguio+Educational+Demo+Farm+Sanctuary"
   },
