@@ -7,7 +7,7 @@ import Destination from "./components/Destination";
 import Nature from "./components/Nature";
 import Activities from "./components/Activities";
 import Culture from "./components/Culture";
-// import Food from "./components/Food";
+import Food from "./components/Food";
 // import Festivities from "./components/Festivities";
 // import Religious from "./components/Religious";
 // End of Explore Cards
@@ -56,6 +56,7 @@ function App() {
           <Route path="/nature" element={<Nature />} />
           <Route path="/activities" element={<Activities />} />
           <Route path="/culture" element={<Culture />} />
+          <Route path="/food" element={<Food />} />
 
           {/* Other Routes */}
           <Route path="/booking" element={<Booking />} />
