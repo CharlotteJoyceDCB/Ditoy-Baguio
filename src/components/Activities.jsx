@@ -139,6 +139,7 @@ const Activities = () => {
 
       {/* Page Title */}
       <h1>Things to Do in Baguio: Adventure, Outdoors, and Shopping</h1>
+      <p className="desc">Baguio City isn’t just the Summer Capital of the Philippines — it’s a haven for adventurers, nature lovers, and bargain hunters. Whether you're chasing thrills, scenic views, or the best thrift finds, Baguio offers a mix of cool-weather experiences you won’t forget.</p>
 
       {/* List of Places */}
       {places.map((place, index) => (

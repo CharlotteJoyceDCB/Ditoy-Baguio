@@ -77,6 +77,14 @@ html, body {
     color: #333;
   }
 
+  p.desc {
+    text-align: center;
+    text-wrap: wrap;
+    color: #555;
+    margin: 0 4rem;
+    margin-bottom: 20px;
+  }
+
   .place-card {
     border-radius: 8px;
     margin: 0px 70px;

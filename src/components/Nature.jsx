@@ -129,7 +129,8 @@ const Nature = () => {
       </div>
 
       {/* Page Title */}
-      <h1>Why You Should Visit Baguio’s Stunning Natural Attractions</h1>
+      <h1>Explore Baguio’s Natural Wonders</h1>
+      <p className="desc">Baguio City isn’t just about cool weather and pine trees — it’s a sanctuary for nature lovers looking to slow down, breathe fresh mountain air, and reconnect with the earth. From scenic parks and lush gardens to hidden eco-spots and panoramic viewpoints, the City of Pines offers a refreshing escape at every turn. Whether you're up for a morning stroll among flowers, paddling a boat under the sun, or hiking quiet forest trails, these natural gems showcase the peaceful and vibrant side of Baguio. Ready to explore?</p>
 
       {/* List of Places */}
       {places.map((place, index) => (

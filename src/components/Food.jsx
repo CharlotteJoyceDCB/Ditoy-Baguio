@@ -179,6 +179,7 @@ const Food = () => {
 
       {/* Page Title */}
       <h1>Must-try foods and restaurants in Baguio</h1>
+      <p className="desc">There’s something undeniably magical about Baguio City. Maybe it’s the cool mountain air, the scent of pine in the breeze, or the way the fog settles over the hills like a cozy blanket. But for those who’ve wandered its streets and sat down at its tables, the real magic lies in its food. Here, meals aren't just about nourishment—they're about culture, comfort, and community.</p>
 
       {/* List of Places */}
       {places.map((place, index) => (

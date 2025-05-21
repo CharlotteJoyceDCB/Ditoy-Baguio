@@ -138,7 +138,8 @@ const Culture = () => {
       </div>
 
       {/* Page Title */}
-      <h1>Cultural Things to Do in Baguio</h1>
+      <h1>Discover Baguio’s Rich Culture and Traditions</h1>
+      <p className="desc">Baguio isn’t just a city in the mountains — it’s a cultural melting pot where tradition and creativity thrive side by side. From indigenous dances and handcrafted wood carvings to spiritual spaces and colorful festivals, Baguio offers a glimpse into the soul of the Cordilleras. Whether you're joining a local ritual, learning about tribal heritage, or simply walking through a market filled with handmade goods, every cultural experience in Baguio tells a story. Dive deeper, and you’ll find that the city’s charm is rooted not just in its sights, but in its people and traditions.</p>
 
       {/* List of Places */}
       {places.map((place, index) => (

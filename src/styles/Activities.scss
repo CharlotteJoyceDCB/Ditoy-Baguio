@@ -76,6 +76,14 @@ html, body {
     margin-bottom: 20px;
     color: #333;
   }
+  
+  p.desc {
+    text-align: center;
+    text-wrap: wrap;
+    margin: 0 4rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
 
   .place-card {
     border-radius: 8px;
