@@ -2,7 +2,7 @@ import React,  { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useNavigate } from 'react-router-dom';
-import "../styles/Activities.scss";
+import "../styles/Food.scss";
 import feather from 'feather-icons';
 import FarmersDaughterRestaurant from "../assets/Food/FarmersDaughterRestaurant.jpg";
 import StrawberryTaho from "../assets/Food/StrawberryTaho.jpg";
@@ -17,6 +17,7 @@ import Pinikpikan from "../assets/Food/pinikpikan.jpg";
 import UbeJam from "../assets/Food/ubejam.jpg";
 import Vizcos from "../assets/Food/vizcos-strawberry-shortcake.jpeg";
 import Vegetables from "../assets/Food/Vegetables.jpg";
+import StreetFood from "../assets/Food/streetfood.jpg";
 
 const places = [
   {
@@ -81,6 +82,15 @@ const places = [
     hours: "Open 6:00 AM - 10:00 PM",
     fees: "Price Range: Price may vary",
     mapsLink: "https://www.google.com/maps?q=Baguio+Public+Market"
+  },
+  {
+    title: "Baguio Night Market Street Food",
+    description:
+      "BAs the sun sets and the fog thickens, Harrison Road transforms into Baguio’s most vibrant (and budget-friendly) food adventure: the Baguio Night Market. It’s not just about bargain clothes and vintage finds—it’s also a street food paradise. Food here is fast, flavorful, and fun—perfect for capping off a chilly night. And the best part? Most snacks cost under ₱50, making it easy to try a little bit of everything. It’s chaotic, charming, and completely unforgettable.",
+    image: StreetFood,
+    hours: "Open 9:00 PM - 2:00 AM",
+    fees: "Price Range: Price may vary",
+    mapsLink: "https://www.google.com/maps?q=Baguio+Night+Market"
   },
   {
     title: "Good Taste Restaurant",
