@@ -75,7 +75,7 @@ const places = [
     description:
       "Maryknoll Ecological Sanctuary is a peaceful haven tucked away in the outskirts of the city, ideal for travelers seeking quiet reflection and a deeper connection with nature. This tranquil spot offers lush gardens, forest trails, and a “cosmic journey” trail that takes visitors through interactive stations highlighting the story of creation and humanity's role in caring for the Earth. It’s not just a nature walk—it’s an experience that blends ecology, spirituality, and education.",
     image: Maryknoll,
-    hours: "Open daily, 8:30 AM – 4:30 PM",
+    hours: "Open Friday - Sunday, 7:30 AM – 4:30 PM",
     fees: "Entrance Fee: P35 - P50 | Pay Parking",
     mapsLink: "https://www.google.com/maps?q=Maryknoll+Ecological+Sanctuary"
   },
