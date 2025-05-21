@@ -73,7 +73,7 @@ const places = [
     {
     title: "Chalk Art in Session Road: Baguio's Street Canvas Comes Alive",
     description:
-      "deEvery Sunday, Session Road transforms into a canvas where chalk art takes the spotlight. Local artists, children, and curious passersby bring the pavement to life with vibrant colors and creative designs—from playful sketches to detailed masterpieces. It’s a fleeting yet powerful display of Baguio’s artistic soul, inviting everyone to pause, admire, or even pick up a piece of chalk and leave their own mark.sc",
+      "Every Sunday, Session Road transforms into a canvas where chalk art takes the spotlight. Local artists, children, and curious passersby bring the pavement to life with vibrant colors and creative designs—from playful sketches to detailed masterpieces. It’s a fleeting yet powerful display of Baguio’s artistic soul, inviting everyone to pause, admire, or even pick up a piece of chalk and leave their own mark.sc",
     image: Chalk,
     hours: "Open 8:00 AM - 3:00 PM | Sundays only",
     fees: "Fees: P0",

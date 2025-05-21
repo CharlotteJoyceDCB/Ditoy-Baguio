@@ -20,7 +20,7 @@ import Footer from "./components/Footer";
 
 const Layout = ({ children }) => {
   const location = useLocation();
-  const hideNavbarOnPages = ["/nature", "/food", "/activities", "/religious"];
+  const hideNavbarOnPages = ["/nature", "/food", "/activities", "/culture", "/festivities", "/religious"];
 
   return (
     <div className="App">
