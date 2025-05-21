@@ -6,7 +6,7 @@ import Destination from "./components/Destination";
 // Explore Cards
 import Nature from "./components/Nature";
 import Activities from "./components/Activities";
-// import Culture from "./components/Culture";
+import Culture from "./components/Culture";
 // import Food from "./components/Food";
 // import Festivities from "./components/Festivities";
 // import Religious from "./components/Religious";
@@ -52,9 +52,10 @@ function App() {
             }
           />
 
-          {/* Nature Page (Navbar Hidden) */}
+          {/* Explore Pages (Navbar Hidden) */}
           <Route path="/nature" element={<Nature />} />
           <Route path="/activities" element={<Activities />} />
+          <Route path="/culture" element={<Culture />} />
 
           {/* Other Routes */}
           <Route path="/booking" element={<Booking />} />

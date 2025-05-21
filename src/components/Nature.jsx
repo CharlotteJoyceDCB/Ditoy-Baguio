@@ -125,7 +125,7 @@ const Nature = () => {
           Home
         </button>
         <i className="arrow" data-feather="arrow-right-circle"></i>
-        <button className="nav-button active">Where to go?</button>
+        <button className="nav-button active">Nature</button>
       </div>
 
       {/* Page Title */}
