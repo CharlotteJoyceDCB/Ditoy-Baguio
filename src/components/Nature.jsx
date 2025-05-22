@@ -1,4 +1,4 @@
-import React,  { useEffect } from "react";
+import React,  { useEffect, useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useNavigate } from 'react-router-dom';
@@ -100,17 +100,36 @@ const places = [
 ];
 
 const Nature = () => {
-    useEffect(() => {
+    const [showTopBtn, setShowTopBtn] = useState(false);
+        const navigate = useNavigate();
+    
+        useEffect(() => {
         feather.replace();
+    
+        const handleScroll = () => {
+          setShowTopBtn(window.scrollY > 300);
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+        AOS.init({ duration: 800, once: true });
+    
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
       }, []);
-
-    const navigate = useNavigate();
-      AOS.init({
-        duration: 800,
-        once: true
-      });
-    feather.replace();
-
+    
+        AOS.init({
+            duration: 800,
+            once: true
+          });
+        feather.replace();
+    
+        const scrollToTop = () => {
+            window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+            });
+        };
 
   return (
     <div className="places-container">
@@ -164,6 +183,13 @@ const Nature = () => {
           </div>
         </div>
       ))}
+
+      {/* Scroll to Top Button */}
+      {showTopBtn && (
+        <button className="scroll-to-top" onClick={scrollToTop}>
+          <i data-feather="arrow-up-circle"></i>
+        </button>
+      )}
     </div>
   );
 };
