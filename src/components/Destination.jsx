@@ -42,7 +42,7 @@ const Destination = () => {
     {
       title: "Religious & Spiritual",
       image: ReligiousImage,
-      link: "#",
+      link: "/religious",
     },
   ];
 
