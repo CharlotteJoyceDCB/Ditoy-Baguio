@@ -37,7 +37,7 @@ const Destination = () => {
     {
       title: "Events & Festivities",
       image: EventsImage,
-      link: "#",
+      link: "/festivities",
     },
     {
       title: "Religious & Spiritual",
