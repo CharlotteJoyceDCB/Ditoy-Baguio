@@ -162,7 +162,10 @@ const BookingForm = () => {
               Our booking system lets you reserve apartments, hotels, or even rent a car with ease. Choose the category you’re interested in,
               enter your preferences, and we’ll help you find the perfect option for your needs.
             </p>
+            <br />
+            <br />
             <h3>Exclusive Offers for You</h3>
+            <br />
             <p>Take advantage of limited-time discounts and special offers when you book with us today. 
                 <a href="#!"> Sign up</a> for exclusive deals and be the first to know about our newest offers.</p>
           </div>
