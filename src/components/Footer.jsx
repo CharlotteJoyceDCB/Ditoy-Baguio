@@ -12,17 +12,17 @@ const Footer = () => {
         <div className="footer__sections__column">
           <h4>About Us</h4>
           <ul>
-            <li><a href="/health">Health Services and Vaccinations</a></li>
-            <li><a href="/climate">Climate and Weather</a></li>
-            <li><a href="/language">Language</a></li>
+            <li><a href="#!">Health Services and Vaccinations</a></li>
+            <li><a href="#!">Climate and Weather</a></li>
+            <li><a href="#!">Language</a></li>
           </ul>
         </div>
         <div className="footer__sections__column">
           <h4>Destinations</h4>
           <ul>
-            <li><a href="/where-to-go">Where to Go</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/events">Events and Festivities</a></li>
+            <li><a href="#!">Where to Go</a></li>
+            <li><a href="#!">Blog</a></li>
+            <li><a href="#!">Events and Festivities</a></li>
           </ul>
         </div>
         <div className="footer__sections__column">
